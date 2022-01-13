@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <style type="text/css">
+                <!--body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}-->
+                body, html{width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+                #allmap{height:600px;width:100%;}
+                #r-result{width:100%;}
+        </style>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?&v=2.0&ak=2MGelREmECQIlwa6YuZihdtlPDhIK05K"></script>
+        <title>test</title>
+</head>
+
+<body>
+        <div id="allmap"></div>
+</body>
+
+</html>
+<script type="text/javascript">
+        // 百度地图API功能
+        var map = new BMap.Map("allmap",{minZoom:8,maxZoom:100}); // 创建Map实例,设置地图允许的最小/大级别
+        var point = new BMap.Point(121.50866, 31.28867);
+        map.centerAndZoom(point, 100);
+        map.enableScrollWheelZoom(true);//开启滚轮放大缩小
+
+
+        //坐标转换完之后的回调函数
+        translateCallback = function addpoint1(data){
+            if (data.status === 0) {
+            var marker1 = new BMap.Marker(data.points[0]);
+            //map.addOverlay(marker1);
+          }
+        }
+
+        function markpoint(lon,lat) {
+            var convertor = new BMap.Convertor();
+            var pointArr = [];
+            var ggPoint = new BMap.Point(lon,lat);
+            pointArr.push(ggPoint);
+            var marker = new BMap.Marker(ggPoint);
+            map.addOverlay(marker);
+            convertor.translate(pointArr, 1, 5, translateCallback)
+
+
+            var polyline = new BMap.Polyline([
+                            new BMap.Point(121.50866, 31.28867),
+                            new BMap.Point(116.405, 39.920),
+                            new BMap.Point(116.425, 39.900)
+                    ], {strokeColor:"blue", strokeWeight:2, strokeOpacity:0.5});
+            map.addOverlay(polyline);
+        }
+
+</script>
