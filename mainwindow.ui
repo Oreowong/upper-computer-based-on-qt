@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1369</width>
+    <height>770</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -49,15 +49,15 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>60</y>
-      <width>171</width>
-      <height>111</height>
+      <x>30</x>
+      <y>10</y>
+      <width>211</width>
+      <height>141</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/new/prefix1/pic/校徽.png);
-image: url(:/new/prefix1/pic/校徽.png);</string>
+     <string notr="true">image: url(:/picture/XH.png);
+</string>
     </property>
     <property name="text">
      <string/>
@@ -67,9 +67,9 @@ image: url(:/new/prefix1/pic/校徽.png);</string>
     <property name="geometry">
      <rect>
       <x>420</x>
-      <y>60</y>
+      <y>10</y>
       <width>271</width>
-      <height>121</height>
+      <height>171</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="hlt_view"/>
@@ -91,7 +91,7 @@ image: url(:/new/prefix1/pic/校徽.png);</string>
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>351</width>
+       <width>391</width>
        <height>421</height>
       </rect>
      </property>
@@ -99,9 +99,9 @@ image: url(:/new/prefix1/pic/校徽.png);</string>
     <widget class="QGroupBox" name="groupBox_2">
      <property name="geometry">
       <rect>
-       <x>410</x>
+       <x>420</x>
        <y>10</y>
-       <width>241</width>
+       <width>231</width>
        <height>301</height>
       </rect>
      </property>
@@ -294,7 +294,7 @@ image: url(:/new/prefix1/pic/校徽.png);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1369</width>
      <height>26</height>
     </rect>
    </property>

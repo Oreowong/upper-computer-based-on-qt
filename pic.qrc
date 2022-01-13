@@ -1,8 +1,8 @@
 <RCC>
     <qresource prefix="/">
         <file>picture/串口.ico</file>
-        <file>picture/校徽.ico</file>
-        <file>picture/校徽.png</file>
+        <file>picture/XH.ico</file>
+        <file>picture/XH.png</file>
         <file>html/maptest.html</file>
     </qresource>
 </RCC>
